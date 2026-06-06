@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.K. Yogitha | Portfolio</title>
+    <meta name="description" content="Portfolio of C.K. Yogitha - Software Developer and Data Analytics Enthusiast. Experience in Python, Java, Machine Learning, and Data Analytics.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">YOGITHA</span><span class="logo-dot">.</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Dark/Light Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+            <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+        <!-- 1. Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-gradients">
+                <div class="gradient-blob blob-1"></div>
+                <div class="gradient-blob blob-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="hero-greeting">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">C.K. Yogitha</span></h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span class="typing-text" id="typing-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Motivated Computer Science Engineering graduate with a strong foundation in Software Development, Data Analytics, and Machine Learning. Passionate about turning complex datasets into intelligent, actionable insights.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="assets/resume.pdf" download="C.K._Yogitha_Resume.pdf" class="btn btn-secondary btn-icon">
+                            <span>Download Resume</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://linkedin.com/in/c-k-yogitha-187129295" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="mailto:yyogitha40@gmail.com" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container reveal">
+                    <div class="image-border-glow"></div>
+                    <div class="profile-image-wrapper">
+                        <img src="assets/profile.jpg" alt="C.K. Yogitha" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Biography</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-content grid-2">
+                    <div class="about-text-card glass-card reveal">
+                        <h3>Let me introduce myself</h3>
+                        <p>
+                            I am a fresh and highly motivated Computer Science Engineering graduate based in Bangalore, Karnataka. With a solid foundation in software development methodologies and a deep curiosity for data analytics, I specialize in connecting coding logic with analytical reasoning.
+                        </p>
+                        <p>
+                            During my academic journey, I focused extensively on machine learning, deep learning, and data engineering. I love taking raw data, refining it, and creating models that can solve real-world problems. Whether building robust backend systems in Java, analyzing data trends in Python and SQL, or creating end-to-end intelligent systems, I strive for precision and excellence.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item"><strong>Location:</strong> <span>Bangalore, Karnataka</span></div>
+                            <div class="detail-item"><strong>Email:</strong> <span>yyogitha40@gmail.com</span></div>
+                            <div class="detail-item"><strong>Languages:</strong> <span>English, Telugu, Kannada</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats reveal">
+                        <div class="stats-grid">
+                            <div class="stat-card glass-card hover-glow">
+                                <div class="stat-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                                    </svg>
+                                </div>
+                                <span class="stat-value">8.85</span>
+                                <span class="stat-label">B.E. CGPA</span>
+                            </div>
+
+                            <div class="stat-card glass-card hover-glow">
+                                <div class="stat-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Internships</span>
+                            </div>
+
+                            <div class="stat-card glass-card hover-glow">
+                                <div class="stat-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <span class="stat-value">3+</span>
+                                <span class="stat-label">Core Projects</span>
+                            </div>
+
+                            <div class="stat-card glass-card hover-glow">
+                                <div class="stat-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                    </svg>
+                                </div>
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Research Paper</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="skills-section section-padding section-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Competences</span>
+                    <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="skills-grid reveal">
+                    <!-- Programming -->
+                    <div class="skills-category-card glass-card hover-glow">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Tech -->
+                    <div class="skills-category-card glass-card hover-glow">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3>Web Technologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML & CSS</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skills-category-card glass-card hover-glow">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                                </svg>
+                            </div>
+                            <h3>Database Systems</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">SQL (MySQL / SQLite)</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skills-category-card glass-card hover-glow">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>
+                            </div>
+                            <h3>Core Computer Science</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Data Structures & Algorithms</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Object-Oriented Programming (OOP)</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Analytics -->
+                    <div class="skills-category-card glass-card hover-glow">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <h3>AI & Analytics</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Data Analytics & Visualisation</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Machine Learning</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Deep Learning</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Soft Skills -->
+                    <div class="skills-category-card glass-card hover-glow">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                            </div>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-list flex-tags">
+                            <span class="skill-tag-pill">VS Code</span>
+                            <span class="skill-tag-pill">Google Colab</span>
+                            <span class="skill-tag-pill">Git & GitHub</span>
+                            <span class="skill-tag-pill">Jupyter Notebooks</span>
+                            <span class="skill-tag-pill">Problem Solving</span>
+                            <span class="skill-tag-pill">Team Collaboration</span>
+                            <span class="skill-tag-pill">Effective Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfolio Showcase</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="projects-grid grid-3 reveal">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card hover-glow">
+                        <div class="project-media">
+                            <div class="project-overlay-gradient"></div>
+                            <div class="project-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M12 2v9M8 5h8M12 11h.01"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-type">Research & AI</span>
+                            </div>
+                            <h3 class="project-title">ATM-Sentinel AI</h3>
+                            <p class="project-description">
+                                An intelligent video surveillance system designed for ATM security. Uses the YOLO (You Only Look Once) architecture for real-time human and object detection, behavior analysis, and risk assessment to trigger automated alerts for ATM robbery prevention.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>YOLO</span>
+                                <span>OpenCV</span>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#achievements" class="project-link-btn" aria-label="View Paper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card hover-glow">
+                        <div class="project-media">
+                            <div class="project-overlay-gradient"></div>
+                            <div class="project-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-type">Data Analytics</span>
+                            </div>
+                            <h3 class="project-title">Bank Marketing Analytics</h3>
+                            <p class="project-description">
+                                An end-to-end data analytics project examining customer term deposit subscriptions. Performed rigorous data cleaning, detailed exploratory data analysis (EDA), multi-dimensional visualizations, and applied predictive modeling to optimize marketing campaign outcomes.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Pandas</span>
+                                <span>Seaborn</span>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card hover-glow">
+                        <div class="project-media">
+                            <div class="project-overlay-gradient"></div>
+                            <div class="project-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-type">Deep Learning / MedTech</span>
+                            </div>
+                            <h3 class="project-title">Breast Cancer Classification</h3>
+                            <p class="project-description">
+                                A clinical diagnostic system designed to classify benign and malignant breast tumors. Involved advanced medical image preprocessing, extraction of crucial features, and training deep learning models to assist pathologists in improving cancer diagnostic accuracy.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Keras</span>
+                                <span>TensorFlow</span>
+                                <span>Deep Learning</span>
+                                <span>Medical Imaging</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Experience Section -->
+        <section id="experience" class="experience-section section-padding section-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Career History</span>
+                    <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="timeline-wrapper reveal">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Exp 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">Jul 2025 - Aug 2025</span>
+                            <h3 class="timeline-role">Data Analytics Intern</h3>
+                            <h4 class="timeline-org gradient-text">Skillfied Mentor</h4>
+                            <p class="timeline-desc">
+                                Conducted in-depth data analysis on real-world datasets utilizing Python libraries (Pandas, Numpy, Matplotlib). Programmed a comprehensive Bank Marketing Analysis project, mapping trends in customer subscriptions, cleaning massive raw datasets, and producing interactive reports. Built experience using Visual Studio Code and Google Colab for research documentation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Exp 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">Feb 2024 - Apr 2024</span>
+                            <h3 class="timeline-role">Scientific Research Intern</h3>
+                            <h4 class="timeline-org gradient-text">Noobtron Pvt. Ltd.</h4>
+                            <p class="timeline-desc">
+                                Researched medical image classification methods. Designed and built machine learning and deep learning models to classify benign and malignant breast tumors. Handled image scaling, preprocessing pipeline designs, and optimization techniques to boost diagnostic accuracy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Academic Background</span>
+                    <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="timeline-wrapper reveal">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Edu 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">Oct 2022 - May 2026</span>
+                            <h3 class="timeline-role">Bachelor of Engineering</h3>
+                            <h4 class="timeline-org gradient-text">Gnanamani College of Technology</h4>
+                            <p class="timeline-desc">
+                                Specialization: <strong>Computer Science and Engineering</strong>.<br>
+                                Maintained an outstanding academic record with a cumulative GPA of <strong>8.85 / 10</strong>.
+                                Engaged in academic research, coding hackathons, and projects focusing on Machine Learning and Deep Learning architectures.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">Jun 2020 - Apr 2022</span>
+                            <h3 class="timeline-role">Intermediate (MPC)</h3>
+                            <h4 class="timeline-org gradient-text">Narayana Junior College</h4>
+                            <p class="timeline-desc">
+                                Focused on Mathematics, Physics, and Chemistry (MPC).<br>
+                                Completed with a remarkable percentage of <strong>95.9%</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Certifications Section -->
+        <section id="certifications" class="certifications-section section-padding section-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Credentials</span>
+                    <h2 class="section-title">Certifications <span class="gradient-text">& Training</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="certifications-grid grid-3 reveal">
+                    <!-- Cert 1 -->
+                    <div class="certification-card glass-card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Web Development Workshop</h3>
+                        <p class="cert-issuer">VR Soft Tech</p>
+                        <p class="cert-description">Gained hands-on experience in building interactive, responsive web interfaces, understanding client-side rendering and web development workflows.</p>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="certification-card glass-card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Python Programming Training</h3>
+                        <p class="cert-issuer">Besant Technologies</p>
+                        <p class="cert-description">Completed deep dive into Python fundamentals, data structures, algorithms, modular coding, and object-oriented programming structures.</p>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="certification-card glass-card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Conference Paper Certificate</h3>
+                        <p class="cert-issuer">Academic Conference Committee</p>
+                        <p class="cert-description">Awarded for successfully presenting the research work titled "ATM-Sentinel AI" at the national conference session on ATM anomaly detection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Achievements Section -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Recognitions</span>
+                    <h2 class="section-title">Achievements <span class="gradient-text">& Publications</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="achievements-content grid-2 reveal">
+                    <!-- Achievements Panel -->
+                    <div class="achievements-card glass-card hover-glow">
+                        <div class="card-header-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="6"></circle>
+                                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"></path>
+                            </svg>
+                            <h3>Key Achievements</h3>
+                        </div>
+                        
+                        <ul class="achievements-list">
+                            <li>
+                                <div class="badge-icon">🥉</div>
+                                <div class="badge-text">
+                                    <strong>3rd Prize in Project Presentation</strong>
+                                    <p>Awarded 3rd place for presenting an outstanding academic project on <em>GPU Computing</em> at the Knowledge Institute of Technology competition.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="badge-icon">🌟</div>
+                                <div class="badge-text">
+                                    <strong>Academic Excellence Award</strong>
+                                    <p>Ranked among top performers in the Computer Science department at Gnanamani College of Technology with a high CGPA of 8.85.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Research Publication Panel -->
+                    <div class="publication-card glass-card hover-glow">
+                        <div class="card-header-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <h3>Publications</h3>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <span class="pub-type">Research Paper</span>
+                            <h4>ATM-SENTINEL AI: Intelligent Video Surveillance Framework for ATM Robbery Detection</h4>
+                            <p class="pub-journal">Published in National Conference / Academic Journal Proceedings</p>
+                            <p class="pub-desc">
+                                Co-authored and presented a novel framework utilizing advanced video streaming analytics, YOLO-based human and object segmentation, and sequence-based event detection to identify ATM tampering and robbery incidents in real-time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact Section -->
+        <section id="contact" class="contact-section section-padding section-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="contact-wrapper grid-2 reveal">
+                    <!-- Contact Info -->
+                    <div class="contact-info-card glass-card hover-glow">
+                        <h3>Let's collaborate on something awesome!</h3>
+                        <p class="contact-subtext">Whether you have a job opportunity, a project idea, or just want to connect, feel free to drop a message.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span>Email Me</span>
+                                    <a href="mailto:yyogitha40@gmail.com">yyogitha40@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span>LinkedIn Profile</span>
+                                    <a href="https://linkedin.com/in/c-k-yogitha-187129295" target="_blank" rel="noopener noreferrer">linkedin.com/in/c-k-yogitha-187129295</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span>Current Location</span>
+                                    <p>Bangalore, Karnataka, India</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span>Call / Message</span>
+                                    <p>+91 91825 34025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card hover-glow">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Project Collaboration">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" rows="5" required placeholder="Hi Yogitha, I'd like to discuss a project with you..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#home" class="logo">
+                    <span class="logo-text">YOGITHA</span><span class="logo-dot">.</span>
+                </a>
+                <p>Software Developer | Data Analytics Enthusiast</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 C.K. Yogitha. All rights reserved.</p>
+                <div class="footer-socials-small">
+                    <a href="https://linkedin.com/in/c-k-yogitha-187129295" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="mailto:yyogitha40@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
