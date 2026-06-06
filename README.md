@@ -38,13 +38,13 @@ Bachelor of Technology (B.Tech) in Computer Science Engineering
 
 ### 📫 Contact
 
-* Email: [your-email@example.com](mailto:your-email@example.com)
-* LinkedIn: your-linkedin-profile
-* GitHub: your-github-username
+* Email: yyogitha40@gmail.com(mailto:your-email@example.com)
+* LinkedIn: https://www.linkedin.com/in/c-k-yogitha-187129295
+* GitHub: https://github.com/yogithagowd2005-1508
 
 ### 🌐 Live Demo
 
-https://your-portfolio-link.vercel.app
+http://localhost:8000
 
 ### ⭐ Features
 
